@@ -1,0 +1,403 @@
+
+/**Desktop**/
+html{
+    height: 100%;
+}
+body {
+  height: 100%;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  
+}
+
+h1{
+    font-size: 68px;
+}
+
+h2.white{
+    color: white;
+    font-size: 42px;
+}
+
+
+.goldhalf{
+    background-color: #fbb040;
+    padding-top:1%;
+    height: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.goldthird{
+    background-color: #fbb040;
+    padding-top:5%;
+    padding-bottom: 80px;
+    }
+.goldback{
+    background-color: #fbb040;
+    color:white;
+    padding: 1%;
+}
+.whitehalf{
+    padding-top:5%;
+    height: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+
+}
+.whitebox{
+    background-color: white;
+    border: 3px solid black;
+    padding: 1%;
+}
+.whitebox a{
+    text-decoration: none;
+    color: black;
+}
+.whiteback{
+    background-color: white;
+    padding: 1%;
+    color: black;
+}
+.whitehalf{
+    background-color: white;
+    padding: 1%;
+    color: black; 
+}
+.bluebox{
+    background-color: #408bfb;
+    margin: 3%;
+    z-index: 9;
+    color: white;
+    border: 3px solid black;
+}
+.bluebox a{
+    text-decoration: none;
+    color: white;
+}
+
+.blueback{
+    background-color: #408bfb;
+    color:white;
+    padding: 1%;
+}
+
+.yellowbox{
+    background-color: #e9fb40;
+    margin: 3%;
+    z-index: 9;
+    border: 3px solid black;
+}
+.yellowback{
+    background-color: #e9fb40;
+    color:white;
+    padding: 1%;
+}
+.goldbox{
+    background-color: #fbb040;
+    margin: 3%;
+    z-index: 9;
+    padding:1%;
+    border: 3px solid black;
+}
+
+
+
+
+.welcome{
+    color: white;
+    font-size: 64px;
+    display: inline;
+    padding:5%;
+    top: 12px;
+    position: relative;
+}
+
+.letter{
+    font-size: 14pt;
+}
+#missionBox{
+    margin-bottom: 3%;
+
+}
+p.mission{
+    
+    font-family: Times, "Times New Roman", Georgia, serif;
+}
+
+#landingnav{
+    font-weight:900;
+    font-size: 28px;
+    border-radius: 0px;
+    color:black;
+}
+
+#login{
+
+}
+
+#nav{
+    background-color: white;
+    /*border-top: 1px solid black;*/
+    border-bottom: 1px solid black;
+    margin: 0;
+
+}
+
+.rightsidenav{
+    border-left: solid 3px black;
+    margin: 3%;
+    z-index: 10;
+
+}
+
+.rightsidenav a {
+text-decoration: none;
+color: black;
+}
+
+.rightsidenav a:hover{
+    color:white;
+
+
+}
+
+#learnmore{
+    position:relative;
+    top:110px;
+    font-size: 38px;
+}
+#learnmorebox{
+    border: 3px solid black;
+
+}
+
+
+.standardform input{
+    border-radius: 3px;
+    border-color: black;
+    padding: 1%;
+}
+
+#learnmoreemail{
+    border-radius: 3px;
+    border-color: black;
+    padding:1%;
+    width:70%;
+    
+}
+
+#signupemail{
+    border-radius: 3px;
+    border-color: black;
+    padding:3%;
+    width:70%;
+    margin: 3%;
+}
+#learnmoresubmit{
+    background-color: #408bfb;
+    border-color: black;
+    margin: 1%;
+    padding:1%;
+}
+
+#bigsociallogin{
+    
+    border-color: black;
+    margin: 1%;
+    padding:1%;
+    font-size: 38px;
+    margin:3%;
+
+}
+
+#bigsociallogin button{
+    
+    background-color: white;
+
+
+}
+
+#learnmorebottom{
+    position: relative;
+    top: -50px;
+}
+
+.inyourface{
+    margin-right: auto;
+    margin-left: auto;
+    width:80%;
+    background-color: #fbb040;
+    padding: 1%;
+}
+.navbar-default .navbar-nav > li > a {
+  color: black;
+}
+.navbar-default .navbar-nav > li > a:hover{
+    text-decoration: underline;
+}
+
+#navlogo{
+    float:left;
+    margin: 1%;
+    margin-left: 3%;
+    margin-right: 2%;
+    display:inline;
+}
+.navbar-brand{
+    font-size: 18pt;
+}
+.navbar-header{
+
+}
+
+.whitewords{
+    color: white;
+    font-size: 22px;
+    margin: 1%; 
+    
+}
+.centered{
+    margin-right: auto;
+    margin-left: auto;
+    
+    text-align: center;
+}
+.thirtytwo{
+    font-size: 32pt;
+}
+.twentyseven{
+    font-size: 18pt;
+}
+
+
+.tall{
+    height:100%;
+}
+.medium{
+
+}
+.short{
+    height:30%;
+}
+
+#alpha{
+    position:fixed;
+    top:5%;
+    font-weight:900;
+    font-size: 28px;
+    border-radius: 0px;
+    color:black;
+    margin:1%;
+    position: fixed;
+    top: 1%;
+    right:1%;
+}
+#alpha a {
+    color: black;
+    z-index:100;
+
+}
+#alphanav, #alphanav a{
+    font-weight:900;
+    font-size: 34px;
+    color: black;    
+}
+
+.cryptobottoms{
+    padding-top: 3%;
+    padding-bottom: 9%;
+}
+#lookingfor{
+    border-top: 1px solid black;
+    background-color: white;
+}
+#jobs{
+    padding-bottom: 170px;
+    border-top: 1px solid black;
+    background-color: white;
+}
+.job{
+    border:3px solid black;
+    margin:1%;
+    padding:1%;
+
+}
+@media screen and (max-width: 990px) { 
+    .job{
+        
+        padding-bottom: 5%;
+        margin-bottom: 15%;
+    }
+}
+#wearestartup{
+    margin-top: 5%;
+}
+
+#constructionrow{
+   position:relative;
+   top:15%;
+}
+#actionrow{
+    position: relative;
+    top:20%;
+}
+#missionactionbox{
+
+}
+.socialbutton{
+    width: 30%;
+}
+.sociallink{
+    
+    font-size: 2vw;
+    margin-left: 8%;
+    
+}
+.facebook{
+font-size: 1.7vw;
+margin-left: 7%;
+}
+.hovfb:hover{
+    background-color: #408bfb;
+}
+.hovtw:hover{
+    background-color: #fb408b
+}
+.hovgh:hover{
+    background-color:#40fbb0
+}
+
+.mission-text{
+    font-size:1.3vw;
+    font-family: Times, "Times New Roman", Georgia, serif;
+}
+#fundbox{
+    margin-top: 10%;
+    margin-bottom: 2%;
+    z-index: 2;
+}
+
+#signature{
+    color:black;
+}
+#kinnard{
+    font-size: 1.4vw;
+}
+.vmiddle{
+    position: relative;
+    top:30%;
+}
+
+/**Desktop**/
+
+/** TABLET **/
+@media (max-width: 600px){
+
+}
+
+/** TABLET **/
+
+/**PHONE**/
+@media (max-width: 600px){
+    
+}
+/**PHONE**/

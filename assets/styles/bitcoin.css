@@ -1,0 +1,60 @@
+/*bitcoin.css*/
+#Bitcoin{
+    background: url('../images/gold.jpg') no-repeat center center fixed;
+     -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:100%;
+  padding: 5%;
+
+}
+#Gate{
+    background: url('../images/gate.jpg') no-repeat center center fixed;
+     -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:100%;
+  padding: 5%;
+
+}
+
+#Needles{
+    background: url('../images/rush.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    padding: 5%;
+}
+#Makeitrain{
+    background: url('../images/matrixrain.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    padding: 5%;
+}
+
+#somuch{
+    position: relative;
+    bottom: -480px;
+}
+#oldtonew{
+    position: relative;
+    bottom: -300px;
+}
+#future{
+    height: 100%;
+}
+#crack{
+    position: relative;
+    bottom: -200px;
+}
+#alicebob{
+    position: relative;
+    top: -12%;
+}
