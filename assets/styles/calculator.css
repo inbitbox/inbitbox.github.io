@@ -1,0 +1,22 @@
+#calculator{
+    background-color: beige;
+    border-radius: 3px;
+    display: flex;
+    height: 90%;
+}
+#calculatorHeader{
+    width: 33%
+    
+}
+#buttons{
+    width:50%;
+    margin: 1%;
+    margin-top: 25px;
+}
+#screen{width: 50%;
+    margin: 1%;
+    margin-top: 25px;
+}
+output{
+
+}
