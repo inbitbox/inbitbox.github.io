@@ -21,12 +21,30 @@ function calculate(block_reward, difficulty, electricity_cost, energy_per_hash, 
     console.log(`difficulty: ${difficulty} block_reward: ${block_reward}`)
     analysis={
         cost_per_hash:electricity_cost*energy_per_hash,
-        get cost_per_hash_p1(){return this.cost_per_hash+1},
-        get profit_per_hash() {return (block_reward/((2**32)*difficulty))-this.cost_per_hash},
+        get cost_per_hour() { return this.cost_per_hash*hashrate*60*60},
+        get cost_per_day()  { return this.cost_per_hour*24}
+        get cost_per_week() { return this.cost_per_day*7}
+        get cost_per_month(){return this.cost_per_week*4.29}
+
+        
+        /* Revenue*/
+        get revenue_per_hash() {return (block_reward/((2**32)*difficulty))},
+        get revenue_per_hour() {return this.revenue_per_hash*hashrate*60*60},
+        get revenue_per_day()  {return this.revenue_per_hour*24},
+        get revenue_per_week() {return this.revenue_per_day*7},
+        get revenue_per_month(){retun this.revenue_per_week*4.29},
+
+        /*Profit*/
+        get profit_per_hash() {return this.revenue_per_hash-this.cost_per_hash},
         get profit_per_hour() {return hashrate*this.profit_per_hash*60*60},
-        get profit_per_day() {return this.profit_per_hour*24},
+        get profit_per_day()  {return this.profit_per_hour*24},
         get profit_per_week() {return this.profit_per_day*7},
-        get profit_per_month() {return this.profit_per_day*30.5}
+        get profit_per_month(){return this.profit_per_week.4.29}
+
+        /*Financials*/
+
+
+
     }
     if(cb) {cb(null, analysis);} else{return;};                        
 }
