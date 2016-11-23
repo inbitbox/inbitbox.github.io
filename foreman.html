@@ -41,6 +41,27 @@ layout: default
     </div>
     
     <div id="screen">
+        <table class=table>
+            <thead><tr><th></th><th>Per Day</th><th>Per Week</th><th>Per Month</th></th></tr></thead>
+            <tbody>
+                <tr><td>Profit</td>
+                <td><output id="profit_per_day" name="profit_per_day" form="screenForm"></output></td>
+                <td><output id="profit_per_week" name="profit_per_week" form="screenForm"></output></div></td>
+                <td><output id="profit_per_month" name="profit_per_month" form="screenForm"></output></td>
+                </tr>
+                <tr><td>Cost</td>
+                <td><output id="cost_per_day" name="cost_per_day" form="screenForm"></output></div></td>
+                <td><output id="cost_per_week" name="cost_per_week" form="screenForm"></output></div></td>
+                <td><output id="cost_per_month" name="cost_per_month" form="screenForm"></output></div></td>
+                </tr>
+                <tr><td>Revenue</td>
+                <td><output id="revenue_per_day" name="revenue_per_day" form="screenForm"></output></div></td>
+                <td><output id="revenue_per_week" name="revenue_per_week" form="screenForm"></output></div></td>
+                <td><output id="revenue_per_month" name="revenue_per_month" form="screenForm"></output></div></td>
+                </tr>
+            </tbody>
+            
+        </table>
         <form id="screenForm">
             
             <!--Revenue-->
@@ -54,15 +75,15 @@ layout: default
 
             <div class="form-group">
             <label>Revenue Per Day<span class="units"></span></label>
-            <output id="revenue_per_day" name="revenue_per_day" class="well"></output></div>
+            
             
             <div class="form-group">
             <label>Revenue Per Week<span class="units"></span></label>
-            <output id="revenue_per_week" name="revenue_per_week" class="well"></output></div>
+            
             
             <div class="form-group">
             <label>Revenue Per Month<span class="units"></span></label>
-            <output id="revenue_per_month" name="revenue_per_month" class="well"></output></div>
+            
 
             
             <!-- Cost -->
@@ -76,15 +97,15 @@ layout: default
 
             <div class="form-group">
             <label>Cost Per Day<span class="units"></span></label>
-            <output id="cost_per_day" name="cost_per_day" class="well"></output></div>
+            
             
             <div class="form-group">
             <label>Cost Per Week<span class="units"></span></label>
-            <output id="cost_per_week" name="cost_per_week" class="well"></output></div>
+            
 
             <div class="form-group">
             <label>Cost Per Month<span class="units"></span></label>
-            <output id="cost_per_month" name="cost_per_month" class="well"></output></div>
+            
 
 
             <!--Profit-->
@@ -98,15 +119,15 @@ layout: default
 
             <div class="form-group">
             <label>Profit Per Day<span class="units"></span></label>
-            <output id="profit_per_day" name="profit_per_day" class="well"></output></div>
+            </div>
 
             <div class="form-group">
             <label>Profit Per Week<span class="units"></span></label>
-            <output id="profit_per_week" name="profit_per_week" class="well"></output></div>
+            
 
             <div class="form-group">
             <label>Profit Per Month<span class="units"></span></label>
-            <output id="profit_per_week" name="profit_per_week" class="well"></output></div>
+            </div>
 
 
             <!--Financials-->
