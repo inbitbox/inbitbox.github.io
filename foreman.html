@@ -44,105 +44,68 @@ layout: default
         <table class=table>
             <thead><tr><th></th><th>Per Day</th><th>Per Week</th><th>Per Month</th></th></tr></thead>
             <tbody>
-                <tr><td>Profit</td>
-                <td><output id="profit_per_day" name="profit_per_day" form="screenForm"></output></td>
-                <td><output id="profit_per_week" name="profit_per_week" form="screenForm"></output></div></td>
-                <td><output id="profit_per_month" name="profit_per_month" form="screenForm"></output></td>
+                <tr><th>Profit</th>
+                    <td><output id="profit_per_day" name="profit_per_day" form="screenForm"></output></td>
+                    <td><output id="profit_per_week" name="profit_per_week" form="screenForm"></output></td>
+                    <td><output id="profit_per_month" name="profit_per_month" form="screenForm"></output></td>
                 </tr>
-                <tr><td>Cost</td>
-                <td><output id="cost_per_day" name="cost_per_day" form="screenForm"></output></div></td>
-                <td><output id="cost_per_week" name="cost_per_week" form="screenForm"></output></div></td>
-                <td><output id="cost_per_month" name="cost_per_month" form="screenForm"></output></div></td>
+                
+                <tr><th>Revenue</th>
+                    <td><output id="revenue_per_day" name="revenue_per_day" form="screenForm"></output></td>
+                    <td><output id="revenue_per_week" name="revenue_per_week" form="screenForm"></output></td>
+                    <td><output id="revenue_per_month" name="revenue_per_month" form="screenForm"></output></td>
                 </tr>
-                <tr><td>Revenue</td>
-                <td><output id="revenue_per_day" name="revenue_per_day" form="screenForm"></output></div></td>
-                <td><output id="revenue_per_week" name="revenue_per_week" form="screenForm"></output></div></td>
-                <td><output id="revenue_per_month" name="revenue_per_month" form="screenForm"></output></div></td>
+                <tr><th>Cost</th>
+                    <td><output id="cost_per_day" name="cost_per_day" form="screenForm"></output></td>
+                    <td><output id="cost_per_week" name="cost_per_week" form="screenForm"></output></td>
+                    <td><output id="cost_per_month" name="cost_per_month" form="screenForm"></output></td>
+                </tr>
+            </tbody>            
+        </table>
+        <table class="table">
+            <thead><tr><th></th><th>Per Hash</td><th>Per Hour</th></tr></thead>
+            <tbody>
+                <tr>
+                    <th>Profit</th>
+                    <td><output id="profit_per_hash" name="profit_per_hash" form="screenForm"></output>
+                    </td>
+                    <td><output id="profit_per_hour" name="profit_per_hour" form="screenForm"></output>
+                    </td>
+                </tr>
+                <tr><th>Revenue</th>
+                    <td><output id="revenue_per_hash" name="revenue_per_hash" form="screenForm"></output>
+                    </td>
+                    <td><output id="revenue_per_hour" name="revenue_per_hour" form="screenForm"></output>
+                    </td>
+                </tr>
+                <tr><th>Cost</th>
+                    <td><output id="cost_per_hash" name="cost_per_hash" form="screenForm" "></output>
+                    </td>
+                    <td><output id="cost_per_hour" name="cost_per_hour" form="screenForm"></output>
+                    </td>
                 </tr>
             </tbody>
-            
+
         </table>
-        <form id="screenForm">
-            
-            <!--Revenue-->
-            <div class="form-group">
-            <label>Revenue Per Hash<span class="units"></span></label>
-            <output id="revenue_per_hash" name="revenue_per_hash" class="well"></output></div>
+        <table class="table">
+            <thead><tr><th></th><th>Down</th><th>Mid</th></tr></thead>
+            <tbody>
+                <tr>
+                    <th>Break Even Period</th>
+                    <td><output id="bep" name="bep" form="screenForm"></output></td>
+                </tr>
+                <tr>
+                    <th>Net Present Value<th>
+                    <td><output id="npv" name="npv" form="screenForm" "></output></td>
+                </tr>
+                <tr>
+                    <th>IRR</th>
+                    <td><output id="irr" name="irr" form="screenForm"></output></td>
+                </tr>
+            </tbody>
+        </table>
 
-            <div class="form-group">
-            <label>Revenue Per Hour<span class="units"></span></label>
-            <output id="revenue_per_hour" name="revenue_per_hour" class="well"></output></div>
-
-            <div class="form-group">
-            <label>Revenue Per Day<span class="units"></span></label>
-            
-            
-            <div class="form-group">
-            <label>Revenue Per Week<span class="units"></span></label>
-            
-            
-            <div class="form-group">
-            <label>Revenue Per Month<span class="units"></span></label>
-            
-
-            
-            <!-- Cost -->
-            <div class="form-group">
-            <label>Cost Per Hash<span class="units"></span></label>
-            <output id="cost_per_hash" name="cost_per_hash" class="well"></output></div>
-
-            <div class="form-group">
-            <label>Cost Per Hour<span class="units"></span></label>
-            <output id="cost_per_hour" name="cost_per_hour" class="well"></output></div>
-
-            <div class="form-group">
-            <label>Cost Per Day<span class="units"></span></label>
-            
-            
-            <div class="form-group">
-            <label>Cost Per Week<span class="units"></span></label>
-            
-
-            <div class="form-group">
-            <label>Cost Per Month<span class="units"></span></label>
-            
-
-
-            <!--Profit-->
-            <div class="form-group">
-            <label>Profit Per Hash<span class="units"></span></label>
-            <output id="profit_per_hash" name="profit_per_hash" class="well"></output></div>
-
-            <div class="form-group">
-            <label>Profit Per Hour<span class="units"></span></label>
-            <output id="profit_per_hour" name="profit_per_hour" class="well"></output></div>
-
-            <div class="form-group">
-            <label>Profit Per Day<span class="units"></span></label>
-            </div>
-
-            <div class="form-group">
-            <label>Profit Per Week<span class="units"></span></label>
-            
-
-            <div class="form-group">
-            <label>Profit Per Month<span class="units"></span></label>
-            </div>
-
-
-            <!--Financials-->
-            <div class="form-group">
-            <label>Break Even Period<span class="units"></span></label>
-            <output name="BEP" class="well"></output></div>
-
-            <div class="form-group">
-            <label>Break Even Period<span class="units"></span></label>
-            <output name="BEP" class="well"></output></div>
-            
-            <div class="form-group">
-            <label>Net Present Value<span class="units"></span></label>
-            <output name="NPV" class="well"></output></div>
-            
-        </form>
+        <form id="screenForm"></form>
+        
     </div>
 </div>
