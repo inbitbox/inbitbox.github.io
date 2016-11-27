@@ -387,6 +387,21 @@ margin-left: 7%;
     top:30%;
 }
 
+.down::after{
+    font-size: 12pt;
+    content: '\25BC';
+    color:#000000;
+    padding-right: 1%;
+    margin-right: 1%;
+    top: 10%;
+}
+.up::after{
+    font-size: 12pt;
+    content: '\25B2';
+    color:#fbb040;
+    padding-right: 1%;
+    margin-right: 1%;
+}
 /**Desktop**/
 
 /** TABLET **/

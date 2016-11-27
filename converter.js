@@ -1,26 +1,8 @@
 //converter.js
 
-/*var ticker = new XMLHttpRequest();
 
 
-function tick() {
-    ticker.open("GET", "http://api.coindesk.com/v1/bpi/currentprice.json", true);
-    ticker.send();
-    //console.log("Some response " + ticker.responseText);
-}
-setInterval(tick(), 2000);
-
-$(document).ready(
-    $.get("http://api.coindesk.com/v1/bpi/currentprice.json", function(){
-        alert('success');
-    })
-    .done(console.log("Some data: "))
-    .error()
-    .fail(console.log("Failure!!!: "))    
-
-)*/
-setInterval(tick, 2000);
-
+var price={};
 // Create the XHR object.
 function createCORSRequest(method, url) {
   var xhr = new XMLHttpRequest();
@@ -40,7 +22,26 @@ function createCORSRequest(method, url) {
 }
 
 
+function changePrice(newPrice) {
 
+    console.log('changing price');
+    if (newPrice>price.value){
+        price.delta=newPrice-price;
+        price.value=newPrice;
+        price.direction=1;
+        document.getElementById('arrow').classList.toggle('up');
+        console.log('Going up');
+
+    }else{
+        price.delta=newPrice-price;
+        price.value=newPrice;
+        price.direction=0;
+        console.log('Going down');
+    }
+    document.getElementById('BTC/USD').innerHTML=price.value;
+
+
+}
 // Make the actual CORS request.
 function tick() {
   // This is a sample server that supports CORS.
@@ -48,18 +49,23 @@ function tick() {
   
   var ticker = createCORSRequest('GET', url);
   if (!ticker) {
-    alert('CORS not supported');
+    console.log('CORS not supported');
     return;
   }
 
   // Response handlers.
   ticker.onload = function() {
+    if(JSON.parse(ticker.response).bpi.USD.rate != price){
+        changePrice(JSON.parse(ticker.response).bpi.USD.rate);
+    }
     console.log(JSON.parse(ticker.response).bpi.USD.rate);    
   };
 
   ticker.onerror = function() {
-    alert('Woops, there was an error making the request.');
+    console.log('Woops, there was an error making the request.');
   };
 
   ticker.send();
 }
+
+setInterval(tick, 2000);
