@@ -20,8 +20,8 @@ function calculate(block_reward, difficulty, electricity_cost, energy_per_hash, 
     console.log(`electricity_cost: ${electricity_cost} energy_per_hash: ${energy_per_hash}`);
     console.log(`difficulty: ${difficulty} block_reward: ${block_reward}`)
     analysis={
-        get cost_per_hash() {return electricity_cost*energy_per_hash},
-        get cost_per_hour() {return this.cost_per_hash*hashrate*60*60},
+        get cost_per_hash() {return electricity_cost*energy_per_hash}, //¢/kwh * kwh/joule * joule/hash * USD/¢ * BTC/USD =BTC/Hash
+        get cost_per_hour() {return this.cost_per_hash*hashrate*60*60}, //BTC/hash * USD/BTC=  
         get cost_per_day()  {return this.cost_per_hour*24},
         get cost_per_week() {return this.cost_per_day*7},
         get cost_per_month(){return this.cost_per_week*4.29},
