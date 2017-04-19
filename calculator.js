@@ -1,3 +1,4 @@
+console.log(Big(1.009));
 var profit_per_hash;
 var revenue;
 var cost;
@@ -20,22 +21,22 @@ function calculate(block_reward, difficulty, electricity_cost, energy_per_hash, 
     console.log(`electricity_cost: ${electricity_cost} energy_per_hash: ${energy_per_hash}`);
     console.log(`difficulty: ${difficulty} block_reward: ${block_reward}`)
     analysis={
-        get cost_per_hash() {return electricity_cost*energy_per_hash}, //¢/kwh * kwh/joule * joule/hash * USD/¢ * BTC/USD =BTC/Hash
-        get cost_per_hour() {return this.cost_per_hash*hashrate*60*60}, //BTC/hash * USD/BTC=  
-        get cost_per_day()  {return this.cost_per_hour*24},
-        get cost_per_week() {return this.cost_per_day*7},
-        get cost_per_month(){return this.cost_per_week*4.29},
+        get cost_per_hash() {return Big(electricity_cost).times(energy_per_hash)}, //¢/kwh * kwh/joule * joule/hash * USD/¢ * BTC/USD =BTC/Hash
+        get cost_per_hour() {return this.cost_per_hash.times(hashrate).times(3600)},  
+        get cost_per_day()  {return this.cost_per_hour.times(24)}, //
+        get cost_per_week() {return this.cost_per_day.times(7)},
+        get cost_per_month(){return this.cost_per_week.times(4.29)},
 
         
         /* Revenue*/
-        get revenue_per_hash() {return (block_reward/((2**32)*difficulty))},
+        get revenue_per_hash() {return (block_reward/((2**32)*difficulty))}, //BTC/hash * USD/BTC= USD/hash
         get revenue_per_hour() {return this.revenue_per_hash*hashrate*60*60},
         get revenue_per_day()  {return this.revenue_per_hour*24},
         get revenue_per_week() {return this.revenue_per_day*7},
         get revenue_per_month(){return this.revenue_per_week*4.29},
 
         /*Profit*/
-        get profit_per_hash() {return this.revenue_per_hash-this.cost_per_hash},
+        get profit_per_hash() {return this.revenue_per_hash-this.cost_per_hash}, 
         get profit_per_hour() {return hashrate*this.profit_per_hash*60*60},
         get profit_per_day()  {return this.profit_per_hour*24},
         get profit_per_week() {return this.profit_per_day*7},
