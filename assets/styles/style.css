@@ -91,6 +91,21 @@ h2.white{
     color:white;
     padding: 1%;
 }
+.pinkback{
+    background-color: #fb408b;
+    color:white;
+    padding: 1%;
+}
+.greenback{
+    background-color: #40fbb0;
+    color:white;
+    padding: 1%;
+}
+.blackback{
+    background-color: #000000;
+    color:white;
+    padding: 1%;
+}
 .goldbox{
     background-color: #fbb040;
     margin: 3%;
@@ -98,7 +113,6 @@ h2.white{
     padding:1%;
     border: 3px solid black;
 }
-
 
 
 
